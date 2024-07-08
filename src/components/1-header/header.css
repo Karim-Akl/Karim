@@ -1,0 +1,208 @@
+/* ===========================
+ table of contents
+==============================
+1. Header Design
+2. Button & icon
+3- Modal == pop up
+4- Responsive Design (media query)*/
+
+/* ========================
+    1. Header Design
+=========================== */
+header.flex {
+  justify-content: space-evenly;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+
+}
+
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px #2323242a;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 35px;
+  display: flex;
+
+
+}
+
+header ul.flex {
+  gap: 16px;
+  
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.8;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+  box-shadow: 1px -1111px 100px var(--blue);
+}
+
+header button {
+  font-size: 1.2rem;
+}
+
+header button.men {
+  display: none;
+}
+
+/* ========================
+    2. Button & icon
+=========================== */
+header .men,
+header button.mode {
+  background-color: var(--bgHeader);
+  height: 2rem;
+  width: 2.4rem;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  color: var(--subtitle);
+  transition: 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--subtitle);
+  transform: translateX(5px);
+  box-shadow: 1px 1px 40px #2323242a;
+
+}
+header .men{
+  height: 1rem;
+  width: 3.2rem;
+  display: flex;
+  padding: 7px;
+  padding-right:-4px ;
+  font-size: smaller;
+  color: rgb(240, 248, 255);
+  /* flex-direction: row-reverse !important;   */
+  gap: 1px;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  font-weight: 100;
+  color: var(--subtitle);
+  display: none !important;
+
+}
+header .icon-chevron-down{
+  font-size: 12px;
+
+
+}
+
+header .icon-chevron-down:hover,
+header button.mode:hover {
+  color: var(--title);
+  /* border: 1px solid var(--border); */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+
+header .icon-x {
+  font-size: 1rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+
+header .icon-x:hover {
+  font-size: 1.2rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+/* ========================
+    3- Modal == pop up
+=========================== */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgba(40, 40, 48, 0.91);
+
+  /* filter: blur(8px); */
+  backdrop-filter: blur(4px);
+}
+
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+
+  60% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.modal {
+  animation: mymove 0.77s 1;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+
+header .fixed ul.modal li:first-child {
+  text-align: right;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  margin-bottom: -1rem;
+}
+
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+
+header .fixed ul.modal li a {
+  font-size: 1rem;
+}
+.light .icon-sun{
+  color: rgb(21 184 166)!important;;
+}
+/* =====================================
+  4- Responsive Design (media query)
+======================================== */
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+
+  header .men{
+    flex-direction: row-reverse !important;
+    display: block !important;
+
+  }
+  header.flex{
+    /* transform: translateX(17rem); */
+    justify-content: end;
+    gap: 3px;
+    position: relative;
+    right: -30px;
+
+  }
+}
