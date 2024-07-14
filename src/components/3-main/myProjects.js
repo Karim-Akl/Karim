@@ -3,12 +3,12 @@ export const myProjects = [
     projectTitle: "Portfolio Project",
     category: [ "next"],
     imgPath: "./images/Portfolio.png",
-    subTitle: "My Portfolio Project Using Vite",
+    subTitle: "My Portfolio Project Using Vite & Next",
     gitHup: "#", ///editor
     linkPage: "#", ////
   },
   {
-    projectTitle: "E-Commerce Project",
+    projectTitle: "AWU Shopping",
     category: ["react", "next"],
     imgPath: "./images/ecommerce.png",
     subTitle: "E-Commerce Using React & Css & Js",
@@ -20,7 +20,7 @@ export const myProjects = [
     projectTitle: "TailwindCss Project",
     category: ["tailwindcss"],
     imgPath: "./images/Talwind.png",
-    subTitle: "TailwindCss Using Tailwind , Js & Css & Html ",
+    subTitle: "TailwindCss Using Tailwind , Js & Css",
     gitHup: "https://github.com/Karim-Akl/TailWind",
     linkPage: "https://karim-akl.github.io/TailWind/",
   },
@@ -64,7 +64,7 @@ export const myProjects = [
     projectTitle: "Adadis Project",
     category: ["css"],
     subTitle:
-      "This represents a simple website layout that uses HTML and CSS techniques to achieve an attractive design that is responsive to different screen sizes.",
+      "This represents a simple website layout that uses HTML and CSS",
     imgPath: "./images/adidas.png",
     gitHup: "https://github.com/Karim-Akl/Adidas_Project",
     linkPage: "https://karim-akl.github.io/Adidas_Project/Index.Html",

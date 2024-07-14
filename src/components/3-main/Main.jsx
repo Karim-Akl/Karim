@@ -82,7 +82,7 @@ const Main = () => {
                 key={item.imgPath}
                 className="  card"
               >
-                <img width={290} height={390} src={item.imgPath} alt="" />
+                <img width={290} height={230} src={item.imgPath} alt="" />
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
